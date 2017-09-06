@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.parallel.ReciprocalArraySumTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 9.653 sec <<< FAILURE! - in edu.coursera.parallel.ReciprocalArraySumTest
+testParManyTaskOneHundredMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 1.684 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Mismatch in result for N = 100000000, expected = 5228491.981345, computed = 5228491.980331, absolute error = 0.001014
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.ReciprocalArraySumTest.parTestHelper(ReciprocalArraySumTest.java:83)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskOneHundredMillion(ReciprocalArraySumTest.java:152)
+
+testParManyTaskOneMillion(edu.coursera.parallel.ReciprocalArraySumTest)  Time elapsed: 0.075 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: It was expected that the many-task parallel implementation would run at least 4.800000x faster, but it only achieved 3.000000x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskOneMillion(ReciprocalArraySumTest.java:144)
+
